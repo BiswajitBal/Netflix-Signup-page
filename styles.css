@@ -1,0 +1,163 @@
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #e50914;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 10px;
+  }
+  
+  
+  .logo {
+    width: 100px;
+  }
+  
+  
+  .options {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .language {
+    margin-right: 20px;
+    color: var(--white);
+  }
+  
+  
+  .sign-in {
+    width: 80px;
+    height: 40px;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+  }
+  
+  
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 320px;
+    width: 100%;
+    height: 150%;
+    row-gap: 3px;
+    column-gap: 3px;
+  }
+  
+  
+  .poster {
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+  
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .overlay-text {
+    color: var(--white);
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  
+  .email {
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  
+  .get-started {
+    width: 150px;
+    height: 50px;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .get-started:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+}
+
+.footer-columns {
+    display: flex;
+    align-items: center;
+}
+
+.footer-columns ul {
+    list-style-type: none; 
+}
+
+.footer-columns li {
+   padding-bottom: 10px; 
+}
